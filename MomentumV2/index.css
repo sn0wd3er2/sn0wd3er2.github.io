@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Hi+Melody&display=swap');
+* {
+    font-family: 'Handlee', cursive;
+    color: rgb(255, 164, 164);
+}
+
+@keyframes finish {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+ :root {
+    --main-color: black;
+}
+
+form {
+    text-align: center;
+}
+
+input {
+    position: relative;
+    top: -20px;
+    text-align: center;
+    color: white;
+    opacity: 0.7;
+    font-size: 18px;
+    height: 30px;
+    width: 400px;
+    font-family: none;
+    outline: none;
+    transition: border-bottom 0.3s ease-in-out;
+}
+
+input[type="text"] {
+    background-color: rgb(0, 0, 0, 0.3);
+    border: none;
+}
+
+input::placeholder {
+    color: white;
+    opacity: 0.7;
+}
+
+input:focus {
+    border-bottom: 1px solid red;
+}
+
+h3 {
+    text-align: center;
+    font-size: 40px;
+    margin: 40px 0px;
+}
+
+button {
+    position: relative;
+    top: -2px;
+    height: 35px;
+    width: 100px;
+    margin: 10px 20px;
+    font-size: 25px;
+    background-color: rgba(247, 239, 239, 0);
+    border-radius: 10px;
+    transition: all 0.4s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.1, 1.1);
+    border: 1px solid red;
+}
+
+ul li {
+    font-size: 35px;
+    list-style: square;
+}
+
+.noshowingForm,
+.noshowingName {
+    display: none;
+}
+
+.showing {
+    text-align: center;
+    font-size: 50px;
+    margin: 0 0 0 0;
+    display: block;
+}
+
+.clock {
+    text-align: center;
+    font-size: 50px;
+    font-style: oblique 40deg;
+}
+
+.main-board {
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+.sub-board {
+    display: flex;
+    flex-direction: column;
+}
+
+.noshowingForm>input {
+    height: 40px;
+}
+
+.verticalLine {
+    border-left: 1px solid var(--main-color);
+}
+
+.horizonLine {
+    border-bottom: 1px solid var(--main-color);
+}
+
+.finishedJobs {
+    background-color: black;
+}
+
+.overlineText {
+    text-decoration: line-through;
+    font-style: oblique 40deg;
+}
+
+.clear-btn {
+    height: 80px;
+    width: 300px;
+    font-size: 40px;
+    position: relative;
+    top: -30px;
+}
+
+.bgImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.finish--ul {
+    animation-name: finish;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}

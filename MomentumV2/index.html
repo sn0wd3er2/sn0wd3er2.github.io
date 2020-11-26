@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momentum</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="js-clock clock"></div>
+
+    <!-- 이름 입력-->
+    <h3 class="js-nameQues noshowingForm">What is your name?</h3>
+
+    <form class="js-formName noshowingForm">
+        <input required type="text" placeholder="Input your name">
+    </form>
+
+    <div class="js-showName noshowingName"></div>
+    <div class="horizonLine"></div>
+    <!--TO DO LIST-->
+    <div class="main-board">
+        <!--TO DO LIST IN THE WEEK-->
+        <div class="sub-board">
+            <h3>What to do in a week</h3>
+            <form class="js-todoweekForm">
+                <input required type="text" placeholder="Input to do list in the week">
+            </form>
+            <ul class="js-todoweekList"></ul>
+        </div>
+        <div class="sub-board">
+            <h3>What To Do Today</h3>
+            <form class="js-todoForm">
+                <input required type="text" placeholder="Input to do list">
+            </form>
+            <ul class="js-todoList"></ul>
+        </div>
+        <div class="sub-board">
+            <h3>Work Done</h3>
+            <button class="js-clearBtn clear-btn">Clear Text</button>
+            <ul class="js-finishList finish--ul"></ul>
+        </div>
+    </div>
+    <!-- GOAL , TARGET, SUCCESS method-->
+    <script src="clock.js"></script>
+    <script src="name.js"></script>
+    <script src="todo.js"></script>
+    <script src="todoweek.js"></script>
+    <script src="bg.js"></script>
+</body>
+
+</html>
