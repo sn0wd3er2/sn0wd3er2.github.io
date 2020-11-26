@@ -4,7 +4,7 @@ const IMG_NUMBER = 4;
 
 function paintImage(imgNumber) {
     const image = new Image();
-    image.src = `https://sn0wd3er2.github.io/MomentumV2/img/${imgNumber}.jpg`;
+    image.src = `/MomentumV2/img/${imgNumber}.jpg`;
     image.classList.add("bgImage");
     body.prepend(image);
 
